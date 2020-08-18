@@ -1,15 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Página de práctica de bootstrap</title>
+        <title>Guía de anime</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        Hola
+        <div class="jumbotron">
+            <h1>Guía de anime</h1>
+            <p>El contenido debería ser lo menos relevante, así que al menos escribamos de algo más entretenido.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Variedad</h3>
+                    <p>Existen muchos géneros de anime, para todos los gustos.</p>
+                </div>
+                <div class="col">
+                    <h3>Mercado en continuo crecimiento</h3>
+                    <p>Todos los días se emiten nuevos capítulos, nunca lograrás verlo todo aunque lo intentes.</p>
+                </div>
+                <div class="col">
+                    <h3>Existen multiples plataforma de emisión de contenido.</h3>
+                    <p>Crunchyroll es la principal plataforma, pero Netflix, por ejemplo,
+                        ha estado agregando cada vez más anime a su catálogo e incluso a hecho sus propias series de anime.</p>
+                </div>
+            </div>
+            <hr>
+            <h1>Recomendaciones 2020 <small>Para ver en cuarentena</small></h1>
+            <div class="d-flex flex-wrap">
+                <div class="anime-item d-flex flex-column justify-content-between pr-3 pb-3">
+                    <div>
+                        <h5>Sword Art Online <small>Alicization - War of Underworld</small></h5>
+                        <p>SAO para mi es simplemente un imperdible de esta temporada.
+                            Esta temporada ha continuado con la historia de un mundo artificial en la que Alice
+                            (un personaje de este mundo) es objeto codiciado por agentes de Estados Unidos y nuestros
+                            heroes deberán hacer todo lo que puedan para protegerla.
+                        </p>
+                    </div>
+                    <a class="btn btn-info" href="https://es.wikipedia.org/wiki/Sword_Art_Online"
+                       target="_blank">Más información</a>
+                </div>
+                <div class="anime-item d-flex flex-column justify-content-between pr-3 pb-3">
+                    <div>
+                        <h5>One piece</h5>
+                        <p>Este es un clásico, no termina nunca pero tiene muy poco relleno en comparación con otros igual de
+                        reconocidos. El arco de Wano está volviendose cada vez más interesante.</p>
+                    </div>
+                    <a class="btn btn-info" href="https://es.wikipedia.org/wiki/One_Piece"
+                       target="_blank">Más información</a>
+                </div>
+                <div class="anime-item d-flex flex-column justify-content-between pr-3 pb-3">
+                    <div>
+                        <h5>Re:Zero <small>kara Hajimeru Isekai Seikatsu</small></h5>
+                        <p>Este es uno de mis series favoritas. Al fin nos encontramos con un 'heroe' que no posee
+                            poderes especiales aparentes, solo el puede morir y volver a repetir un suceso.
+                        </p>
+                    </div>
+                    <a class="btn btn-info" href="https://es.wikipedia.org/wiki/Re:Zero_kara_Hajimeru_Isekai_Seikatsu"
+                            target="_blank">Más información</a>
+                </div>
+                <div class="anime-item d-flex flex-column justify-content-between pr-3 pb-3">
+                    <div>
+                        <h5>Enen no Shouboutai <small>Ni no Shou</small></h5>
+                        <p>En esta serie, la causa más habitual de muerte es, la combustión instantanea.
+                            Se ha formado unas compañias especiales de bomberos para poder 'salvar' a la gente
+                            que combustiona y se convierte en infernales.
+                        </p>
+                    </div>
+                    <a class="btn btn-info" href="https://es.wikipedia.org/wiki/En%27en_no_Sh%C5%8Db%C5%8Dtai"
+                       target="_blank">Más información</a>
+                </div>
+                <div class="anime-item d-flex flex-column justify-content-between pr-3 pb-3">
+                    <div>
+                        <h5>Kanojo, Okarishimasu</h5>
+                        <p>No soy fanático de este tipo de series pero debo decir que me llamo la atención leer que
+                            se trataba sobre 'alquilar novias' para superar problemas amorosos. Tiene una trama bien
+                            interesante así que es una gran opción para esta temporada.
+                        </p>
+                    </div>
+                    <a class="btn btn-info" href="https://es.wikipedia.org/wiki/Kanojo,_Okarishimasu"
+                       target="_blank">Más información</a>
+                </div>
+            </div>
+
+        </div>
+        <footer class="pt-3 pb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h5>Contacto</h5>
+                        <a href="mailto:jorge@ampuero.me">jorge@ampuero.me</a>
+                        <p>Telegram @miguau</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5>Dirección</h5>
+                        <address>
+                            Vivo en mi casa <br>
+                            con mi esposa <br>
+                            y mis perras. <br>
+                            Santiago, Chile.
+                        </address>
+                    </div>
+                    <div class="col-sm-4 d-flex flex-column align-items-end">
+                        <h5>Recursos usados</h5>
+                        <a href="https://getbootstrap.com/">Bootstrap</a>
+                        <a href="https://www.svgbackgrounds.com/">SVG Backgrounds</a>
+                        <a href="https://cssgradient.io/gradient-backgrounds/">CSS Gradient</a>
+                    </div>
+                </div>
+                <div class="row-cols-1 text-center">
+                    Sitio web hecho por Jorge Ampuero Carrasco © 2020. Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
