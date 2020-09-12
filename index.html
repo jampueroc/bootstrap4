@@ -136,6 +136,24 @@
                     </div>
                 </div>
             </div>
+
+            <h2 class="mt-3">Sección para collapse</h2>
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Abreme 1313</a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Abreme 2</button>
+            </p>
+            <div class="row">
+                <div class="col collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+                <div class="col collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
             <h2 class="mt-3">Recomendaciones 2020 <small>Para ver en cuarentena</small></h2>
 
             <div class="row custom-background">
@@ -150,6 +168,10 @@
                                 (un personaje de este mundo) es objeto codiciado por agentes de Estados Unidos y nuestros
                                 heroes deberán hacer todo lo que puedan para protegerla.
                             </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForm">Comentarios</button>
+                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Debes estar logeado para verlos">
+                              <button class="btn btn-warning" style="pointer-events: none;" type="button" disabled>Leer comentarios</button>
+                            </span>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info btn-block m-1" href="https://es.wikipedia.org/wiki/Sword_Art_Online"
@@ -165,6 +187,10 @@
                             <h5>One piece</h5>
                             <p>Este es un clásico, no termina nunca pero tiene muy poco relleno en comparación con otros igual de
                                 reconocidos. El arco de Wano está volviendose cada vez más interesante.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForm">Comentarios</button>
+                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Debes estar logeado para verlos">
+                              <button class="btn btn-warning" style="pointer-events: none;" type="button" disabled>Leer comentarios</button>
+                            </span>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info btn-block" href="https://es.wikipedia.org/wiki/One_Piece"
@@ -181,6 +207,10 @@
                             <p class="card-text">Este es uno de mis series favoritas. Al fin nos encontramos con un 'heroe' que no posee
                                 poderes especiales aparentes, solo el puede morir y volver a repetir un suceso.
                             </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForm">Comentarios</button>
+                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Debes estar logeado para verlos">
+                              <button class="btn btn-warning" style="pointer-events: none;" type="button" disabled>Leer comentarios</button>
+                            </span>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info btn-block" href="https://es.wikipedia.org/wiki/Re:Zero_kara_Hajimeru_Isekai_Seikatsu"
@@ -198,6 +228,10 @@
                                 Se ha formado unas compañias especiales de bomberos para poder 'salvar' a la gente
                                 que combustiona y se convierte en infernales.
                             </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForm">Comentarios</button>
+                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Debes estar logeado para verlos">
+                              <button class="btn btn-warning" style="pointer-events: none;" type="button" disabled>Leer comentarios</button>
+                            </span>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info btn-block" href="https://es.wikipedia.org/wiki/En%27en_no_Sh%C5%8Db%C5%8Dtai"
@@ -215,10 +249,43 @@
                                 se trataba sobre 'alquilar novias' para superar problemas amorosos. Tiene una trama bien
                                 interesante así que es una gran opción para esta temporada.
                             </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForm">Comentarios</button>
+                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Debes estar logeado para verlos">
+                              <button class="btn btn-warning" style="pointer-events: none;" type="button" disabled>Leer comentarios</button>
+                            </span>
                         </div>
                         <div class="card-footer">
                             <a class="btn btn-info btn-block" href="https://es.wikipedia.org/wiki/Kanojo,_Okarishimasu"
                                target="_blank">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" tabindex="-1" id="modalForm"
+                 aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel">Dejanos tus comentarios</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group row-cols-1">
+                                    <label for="name">Nombre*</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                <div class="form-group row-cols-1">
+                                    <label for="comments">Comentarios*</label>
+                                    <textarea class="form-control" id="comments" required></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -258,5 +325,14 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+
+            $('.carousel').carousel({
+                interval: 5000
+            });
+        })
+    </script>
     </body>
 </html>

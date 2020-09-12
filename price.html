@@ -13,7 +13,8 @@
 <body>
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <a class="navbar-brand" href="/"><img src="images/logo.svg" alt="logo" width="50px"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -45,9 +46,28 @@
             <li class="breadcrumb-item active" aria-current="page">Precio</li>
         </ol>
     </nav>
-    <div class="table-responsive-md">
-        <table class="table table-bordered">
-            <thead>
+    <ul class="nav nav-tabs" id="tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="tab1" data-toggle="tab" href="#tableContainer" role="tab"
+               aria-controls="tableContainer" aria-selected="true"
+            >Compara</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab2" data-toggle="tab" href="#tableContainer2" role="tab"
+               aria-controls="tableContainer2" aria-selected="false"
+            >Tarjetas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="tab3" data-toggle="tab" href="#tableContainer3" role="tab"
+               aria-controls="tableContainer3" aria-selected="false"
+            >Comentarios</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="tabContent">
+        <div class="tab-pane fade show active table-responsive-md" id="tableContainer"
+             role="tabpanel" aria-labelledby="tab1">
+            <table class="table table-bordered">
+                <thead>
                 <tr>
                     <th scope="col">Estrellas</th>
                     <th scope="col">Desayuno</th>
@@ -57,8 +77,8 @@
                     <th scope="col">Precio?</th>
                     <th scope="col">Actividades turísticas</th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <tr>
                     <th scope="row">
                         <span class="oi oi-star" aria-label="estrella"></span>
@@ -124,10 +144,43 @@
                     <td>-</td>
                     <td>Si</td>
                 </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
+        </div>
+        <div class="tab-pane fade" id="tableContainer2"
+             role="tabpanel" aria-labelledby="tab2">
+            <h2>Tab 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nulla eu erat feugiat egestas.
+                Vestibulum luctus malesuada gravida. Cras maximus at ligula ut ultricies. Morbi in ex id sem porttitor
+                fermentum vel ut quam. Fusce maximus neque sed dolor molestie suscipit sit amet eget magna. Integer sit
+                amet ex orci. Proin risus ex, hendrerit nec sapien nec, posuere porttitor turpis. Morbi nunc odio,
+                tempor ac cursus ac, sollicitudin id felis. Nam vitae lacus non lorem ornare aliquam. Fusce bibendum
+                elit sit amet elit placerat suscipit. Proin consequat leo suscipit ligula interdum dapibus. Nulla
+                vestibulum nec massa in gravida.</p>
+
+            <p>Nullam metus erat, dapibus sed leo quis, euismod scelerisque ex. Cras malesuada vitae leo et tempus.
+                Nunc efficitur mattis arcu, a tincidunt odio ornare sit amet. Aliquam porta purus in rutrum faucibus.
+                Aenean pulvinar dapibus elit non rhoncus. Vivamus tincidunt tincidunt nulla, non varius ex scelerisque
+                et. Vestibulum ut felis dui.</p>
+        </div>
+        <div class="tab-pane fade" id="tableContainer3"
+             role="tabpanel" aria-labelledby="tab3">
+            <h2>Tab 3</h2>
+            <p>Sed tristique augue vitae odio porta, sed faucibus ligula vehicula. Aenean convallis risus eget laoreet
+                feugiat. Integer sem massa, eleifend at ante vel, eleifend aliquet ex. Mauris diam orci, malesuada et
+                venenatis vel, ultricies vel sapien. Aenean orci massa, ullamcorper et ipsum ac, tincidunt vulputate
+                diam. Maecenas ac tempus felis. Quisque in semper dolor, quis aliquam mauris.</p>
+
+            <p>Cras a lacus massa. Etiam tellus odio, malesuada vel odio eu, volutpat hendrerit sem. Nam elementum
+                felis in elit eleifend, at imperdiet eros molestie. Ut at ultricies purus, sit amet finibus nisi. Ut mi
+                justo, rhoncus vitae convallis id, laoreet vel ante. In laoreet at lorem et vulputate. Nulla facilisi.
+                Nullam sollicitudin rhoncus vehicula. Etiam vel nulla porta, porta metus non, ullamcorper nisi. Aliquam
+                erat volutpat. Vestibulum sit amet nisi iaculis mi dapibus euismod gravida ut sem. Vivamus sed rhoncus
+                mi. Donec facilisis iaculis libero ut sollicitudin.</p>
+        </div>
     </div>
+
 </div>
 <footer class="pt-3 pb-3">
     <div class="container-fluid">
