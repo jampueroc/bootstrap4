@@ -10,8 +10,10 @@
         <link rel="shortcut icon" href="/images/favicon.ico"/>
 
         <!-- Bootstrap CSS -->
+        <!-- build:css style.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <!-- endbuild -->
     </head>
     <body>
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
@@ -158,7 +160,7 @@
 
             <div class="row custom-background">
                 <div class="col-md-4 d-flex justify-content-between">
-                    <div class="card m-2" id="sao">
+                    <div class="card anime-card" id="sao">
                         <img class="card-img-top"
                              src="https://www.gameprotv.com/archivos/201904/sword-art-online-alicization-lycoris-principal.jpg">
                         <div class="card-body">
@@ -180,7 +182,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-between">
-                    <div class="card m-2">
+                    <div class="card anime-card">
                         <img class="card-img-top"
                              src="https://cadenaser00.epimg.net/ser/imagenes/2020/01/30/television/1580385677_025941_1580385838_noticia_normal_recorte1.jpg">
                         <div class="card-body">
@@ -199,7 +201,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-between">
-                    <div class="card m-2" id="re-zero">
+                    <div class="card anime-card" id="re-zero">
                         <img class="card-img-top"
                              src="https://i.pinimg.com/originals/28/6e/33/286e332e0cb0f9a20e2a9093714ee09c.jpg">
                         <div class="card-body">
@@ -219,7 +221,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-between">
-                    <div class="card m-2">
+                    <div class="card anime-card">
                         <img class="card-img-top"
                              src="https://monoschinos.com/assets/img/serie/portada/enen-no-shouboutai-ni-no-shou.jpg">
                         <div class="card-body">
@@ -240,7 +242,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-between">
-                    <div class="card m-2" id="rent">
+                    <div class="card anime-card" id="rent">
                         <img class="card-img-top"
                              src="https://www.playerone.vg/wp-content/uploads/2020/06/Kanojo-Okarishimasu-anime-simulcast-crunchyroll.jpg">
                         <div class="card-body">
@@ -321,18 +323,11 @@
                 </div>
             </div>
         </footer>
-
+    <!-- build:js main-index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-
-            $('.carousel').carousel({
-                interval: 5000
-            });
-        })
-    </script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
     </body>
 </html>

@@ -10,12 +10,29 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "grunt": "^1.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.5.4",
-    "nodemon": "^2.0.4"
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "sass": "^1.26.10",
+    "time-grunt": "^2.0.0"
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/"
   },
   "author": "Jorge Ampuero Carrasco",
   "license": "MIT"
