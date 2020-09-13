@@ -64,7 +64,7 @@ module.exports = function (grunt) {
         },
         clean: {
             build: {
-                src: ['dist']
+                src: ['dist/']
             }
         },
         cssmin: {
@@ -81,7 +81,7 @@ module.exports = function (grunt) {
             },
             release: {
                 files: [{
-                    src: ['dist/js/*.js', 'dist/css/*.css']
+                    src: ['dist/**/*.js', 'dist/**/*.css']
                 }]
             }
         },
@@ -93,7 +93,7 @@ module.exports = function (grunt) {
         },
         useminPrepare: {
             foo: {
-                dest: 'dist',
+                dest: 'dist/',
                 src: ['*.html']
             },
             options: {
@@ -101,24 +101,24 @@ module.exports = function (grunt) {
                     steps: {
                         css: ['cssmin'],
                         js: ['uglify']
-                    }
-                },
-                post: {
-                    css: [{
-                        name: 'cssmin',
-                        createConfig: function (context, block) {
-                            const generated = context.options.generated;
-                            generated.options = {
-                                keepSpecialComments: 0,
-                                rebase: false
+                    },
+                    post: {
+                        css: [{
+                            name: 'cssmin',
+                            createConfig: function (context, block) {
+                                const generated = context.options.generated;
+                                generated.options = {
+                                    keepSpecialComments: 0,
+                                    rebase: false
+                                }
                             }
-                        }
-                    }]
+                        }]
+                    }
                 }
             }
         },
         usemin: {
-            html: ['*.html'],
+            html: ['dist/*.html'],
             options: {
                 assetsDir: ['dist', 'dist/js', 'dist/css']
             }
